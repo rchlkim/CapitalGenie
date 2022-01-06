@@ -12,6 +12,7 @@
 		4A2377B52786B525009EEDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2377B42786B525009EEDB2 /* Assets.xcassets */; };
 		4A2377B82786B525009EEDB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2377B72786B525009EEDB2 /* Preview Assets.xcassets */; };
 		4A81FE9E278758AB0048842D /* AddProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81FE9D278758AB0048842D /* AddProductsView.swift */; };
+		4ABF147627876E45000A074B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF147527876E45000A074B /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4A2377B42786B525009EEDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2377B72786B525009EEDB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A81FE9D278758AB0048842D /* AddProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductsView.swift; sourceTree = "<group>"; };
+		4ABF147527876E45000A074B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				4A2377B42786B525009EEDB2 /* Assets.xcassets */,
 				4A2377B62786B525009EEDB2 /* Preview Content */,
 				4A81FE9D278758AB0048842D /* AddProductsView.swift */,
+				4ABF147527876E45000A074B /* ImagePicker.swift */,
 			);
 			path = genie;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2377B32786B524009EEDB2 /* ContentView.swift in Sources */,
+				4ABF147627876E45000A074B /* ImagePicker.swift in Sources */,
 				4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */,
 				4A81FE9E278758AB0048842D /* AddProductsView.swift in Sources */,
 			);
