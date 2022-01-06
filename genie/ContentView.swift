@@ -40,6 +40,27 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Section {
+                    VStack() {
+                        Image("Logo.png")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 190.0, height: 190.0)
+                            .listRowBackground(Color(.secondarySystemBackground))
+                            .position(x: 140, y: 100)
+                        VStack() {
+                            Text("Your Budget")
+                                    .listRowBackground(Color(.secondarySystemBackground))
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                            Text("$200.78")
+                                .listRowBackground(Color(.secondarySystemBackground))
+                                .font(Font.system(size: 40))
+                                .frame(maxWidth: .infinity, alignment: .center)
+                        }
+                        .padding(-15)
+                    }
+                    .listRowBackground(Color(.secondarySystemBackground))
+                }
                 NavigationLink(destination: AddProductsView()){
                     Text("Add Item")
                 }
@@ -52,6 +73,7 @@ struct ContentView: View {
                 NavigationLink(destination: SortWishListView()){
                     Text("Sort Wishlist")
                 }
+                .navigationTitle("Aladdin's Wishlist")
             }
         }
     }
