@@ -8,13 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    struct AddProductsView: View {
-        var body: some View{
-            Text("Add Product Page")
-                .navigationTitle("Add Item")
-        }
-    }
-    
     struct ComboResultView: View {
         var body: some View{
             Text("Combinations Results Page")
