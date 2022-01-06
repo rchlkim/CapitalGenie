@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1A90E927875191009566BE /* CombinationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A90E827875191009566BE /* CombinationResult.swift */; };
+		3A1A90EE278758A1009566BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A90ED278758A0009566BE /* Result.swift */; };
 		4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2377B02786B524009EEDB2 /* genieApp.swift */; };
 		4A2377B32786B524009EEDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2377B22786B524009EEDB2 /* ContentView.swift */; };
 		4A2377B52786B525009EEDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2377B42786B525009EEDB2 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1A90E827875191009566BE /* CombinationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationResult.swift; sourceTree = "<group>"; };
+		3A1A90ED278758A0009566BE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		4A2377AD2786B524009EEDB2 /* genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2377B02786B524009EEDB2 /* genieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genieApp.swift; sourceTree = "<group>"; };
 		4A2377B22786B524009EEDB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 				4A2377B22786B524009EEDB2 /* ContentView.swift */,
 				4A2377B42786B525009EEDB2 /* Assets.xcassets */,
 				4A2377B62786B525009EEDB2 /* Preview Content */,
+				3A1A90E827875191009566BE /* CombinationResult.swift */,
+				3A1A90ED278758A0009566BE /* Result.swift */,
 			);
 			path = genie;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2377B32786B524009EEDB2 /* ContentView.swift in Sources */,
+				3A1A90E927875191009566BE /* CombinationResult.swift in Sources */,
+				3A1A90EE278758A1009566BE /* Result.swift in Sources */,
 				4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
