@@ -11,27 +11,36 @@ struct Result: View {
     // Replace combination with each number
     // var combination: Int
     var body: some View {
-        VStack(alignment: .leading, spacing: 20){
+        VStack(alignment: .leading, spacing: 0){
             Text("1")
                 .font(.title)
+                .padding()
             ScrollView(.horizontal, showsIndicators: false) {
                             HStack(alignment: .top, spacing: 0) {
                                 Image("Logo.png")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 180.0, height: 180.0)
-                            }
-            
-         /*
-         HStack(alignment: .bottom, spacing: 10){
-             Image("Logo.png")
-                 .resizable()
-                 .aspectRatio(contentMode: .fit)
-                 .padding()
-                 .frame(width: 180.0, height: 180.0)
+                                Image("Logo.png")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 180.0, height: 180.0)
+                                Image("Logo.png")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 180.0, height: 180.0)
+                                Image("Logo.png")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 180.0, height: 180.0)
+                }
             }
-          */
-        Text("Total Price: ")
-        Text("Tota Cashback: ")
-            }
+            Text("Total Price: $100")
+                .padding()
+                .padding(.trailing, 50)
+            Text("Total Cashback: 5%")
+                .padding()
+                .padding(.trailing, 50)
         }
     }
 }
