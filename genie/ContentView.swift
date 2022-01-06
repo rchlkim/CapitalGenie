@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    struct ComboResultView: View {
-        var body: some View{
-            Text("Combinations Results Page")
-                .navigationTitle("Combinations")
-        }
-    }
+//    struct ComboResultView: View {
+//        var body: some View{
+//            Text("Combinations Results Page")
+//                .navigationTitle("Combinations")
+//        }
+//    }
     
     struct EditBudgetView: View {
         var body: some View{
@@ -36,7 +36,7 @@ struct ContentView: View {
                 NavigationLink(destination: AddProductsView()){
                     Text("Add Item")
                 }
-                NavigationLink(destination: ComboResultView()){
+                NavigationLink(destination: CombinationResult()){
                     Text("View Combinations")
                 }
                 NavigationLink(destination: EditBudgetView()){
