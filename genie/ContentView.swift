@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     struct AddProductsView: View {
         var body: some View{
-            Text("Add Product Page")
+            Text("Add Product")
                 .navigationTitle("Add Item")
         }
     }
