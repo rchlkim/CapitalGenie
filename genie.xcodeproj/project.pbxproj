@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1A90E927875191009566BE /* CombinationResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A90E827875191009566BE /* CombinationResultView.swift */; };
+		3A1A90EE278758A1009566BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A90ED278758A0009566BE /* Result.swift */; };
 		4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2377B02786B524009EEDB2 /* genieApp.swift */; };
 		4A2377B32786B524009EEDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2377B22786B524009EEDB2 /* ContentView.swift */; };
 		4A2377B52786B525009EEDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2377B42786B525009EEDB2 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1A90E827875191009566BE /* CombinationResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationResultView.swift; sourceTree = "<group>"; };
+		3A1A90ED278758A0009566BE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		4A2377AD2786B524009EEDB2 /* genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2377B02786B524009EEDB2 /* genieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genieApp.swift; sourceTree = "<group>"; };
 		4A2377B22786B524009EEDB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		4A2377AF2786B524009EEDB2 /* genie */ = {
 			isa = PBXGroup;
 			children = (
+				3A1A90ED278758A0009566BE /* Result.swift */,
+				3A1A90E827875191009566BE /* CombinationResultView.swift */,
 				4A2377B02786B524009EEDB2 /* genieApp.swift */,
 				4A2377B22786B524009EEDB2 /* ContentView.swift */,
 				4A2377B42786B525009EEDB2 /* Assets.xcassets */,
@@ -156,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2377B32786B524009EEDB2 /* ContentView.swift in Sources */,
+				3A1A90E927875191009566BE /* CombinationResultView.swift in Sources */,
+				3A1A90EE278758A1009566BE /* Result.swift in Sources */,
 				4ABF147627876E45000A074B /* ImagePicker.swift in Sources */,
 				4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */,
 				4A81FE9E278758AB0048842D /* AddProductsView.swift in Sources */,
