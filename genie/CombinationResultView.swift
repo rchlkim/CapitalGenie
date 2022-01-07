@@ -10,14 +10,12 @@ import SwiftUI
 struct CombinationResult: View {
     var body: some View {
     NavigationView {
-        HStack(alignment: .top, spacing: 60) {
-            VStack(alignment: .leading, spacing: 20) {
-                Image("Logo.png")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
-                    .frame(width: 180.0, height: 180.0)
-                }
+        List {
+            Text ("Sorted by: Price (Lowest to Highest")
+                .padding()
+            Result()
+            Result()
+            Result()
             }
         .navigationTitle("Results")
         }
