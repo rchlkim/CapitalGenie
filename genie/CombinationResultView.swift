@@ -11,7 +11,7 @@ struct CombinationResult: View {
     var body: some View {
     NavigationView {
         List {
-            Text ("Sorted by: Price (Lowest to Highest")
+            Text ("Sorted by: Rank")
                 .padding()
             Result()
             Result()
