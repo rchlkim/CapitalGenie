@@ -21,18 +21,34 @@ struct ContentView: View {
                 .navigationTitle("Budget")
         }
     }
-    
-    struct SortWishListView: View {
-        var body: some View{
-            Text("Wishlist Sorting Page")
-                .navigationTitle("Wishlist")
-        }
-    }
-    
 
+    @State var isPlaying : Bool = false
     var body: some View {
+        
         NavigationView {
             List {
+                Section {
+                    VStack() {
+                        Image("WhiteCatLogo.png")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 190.0, height: 190.0)
+                            .listRowBackground(Color(.secondarySystemBackground))
+                            .position(x: 140, y: 100)
+                        VStack() {
+                            Text("Your Budget")
+                                    .listRowBackground(Color(.secondarySystemBackground))
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .padding(.top, 5)
+                            Text("$200.78")
+                                .listRowBackground(Color(.secondarySystemBackground))
+                                .font(Font.system(size: 40))
+                                .frame(maxWidth: .infinity, alignment: .center)
+                        }
+                        .padding(-15)
+                    }
+                    .listRowBackground(Color(.secondarySystemBackground))
+                }
                 NavigationLink(destination: AddProductsView()){
                     Text("Add Item")
                 }
@@ -42,9 +58,10 @@ struct ContentView: View {
                 NavigationLink(destination: EditBudgetView()){
                     Text("Change Budget")
                 }
-                NavigationLink(destination: SortWishListView()){
+                NavigationLink(destination: SortWishlistView()){
                     Text("Sort Wishlist")
                 }
+                .navigationTitle("Aladdin's Wishlist")
             }
         }
     }
