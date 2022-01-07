@@ -22,7 +22,6 @@ struct ContentView: View {
 //        }
 //    }
 
-    @State var isPlaying : Bool = false
     var body: some View {
         
         NavigationView {
@@ -59,7 +58,7 @@ struct ContentView: View {
                     Text("Change Budget")
                 }
                 NavigationLink(destination: SortWishlistView()){
-                    Text("Sort Wishlist")
+                    Text("View Wishlist")
                 }
                 .navigationTitle("Aladdin's Wishlist")
             }
