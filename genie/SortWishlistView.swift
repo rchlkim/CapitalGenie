@@ -16,6 +16,7 @@ struct SortWishlistView: View {
     
     var sorts = ["Rank","Price (Low to High)", "Price (High to Low)" ]
     @State private var selectedSort = 0
+    @ObservedObject var model = ViewModel();
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -33,27 +34,14 @@ struct SortWishlistView: View {
             
             Spacer()
             
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 10) {
-                    HStack(alignment: .center, spacing: 20) {
-                        ProductBox();
-                        ProductBox();
-                    }
-                    HStack(alignment: .center, spacing: 20) {
-                        ProductBox();
-                        ProductBox();
-                    }
-                    HStack(alignment: .center, spacing: 20) {
-                        ProductBox();
-                        ProductBox();
-                    }
-                    HStack(alignment: .center, spacing: 20) {
-                        ProductBox();
-                        ProductBox();
-                    }
-                }
+            List (model.list) { item in
+                ProductBox(image: item.productImage, name: item.productName, price: item.productPrice, preference: item.productPreference)
             }
         }
+    }
+    
+    init(){
+        model.getItem()
     }
 }
 
