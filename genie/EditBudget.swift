@@ -13,7 +13,6 @@ struct EditBudget: View {
     var body: some View {
         NavigationView{
             VStack{
-                Spacer()
                 Form {
                     Text("Current Budget: $287.00")
                     TextField("New Budget Amount", text: $newBudget)
