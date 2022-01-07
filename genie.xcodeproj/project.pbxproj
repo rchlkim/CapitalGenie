@@ -15,6 +15,7 @@
 		3A1A90E927875191009566BE /* CombinationResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A90E827875191009566BE /* CombinationResultView.swift */; };
 
 		3A1A90EE278758A1009566BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A90ED278758A0009566BE /* Result.swift */; };
+		3A68770D2787906C0000D2B5 /* EditBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A68770C2787906B0000D2B5 /* EditBudget.swift */; };
 		4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2377B02786B524009EEDB2 /* genieApp.swift */; };
 		4A2377B32786B524009EEDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2377B22786B524009EEDB2 /* ContentView.swift */; };
 		4A2377B52786B525009EEDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2377B42786B525009EEDB2 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		3A1A90E827875191009566BE /* CombinationResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationResultView.swift; sourceTree = "<group>"; };
 
 		3A1A90ED278758A0009566BE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		3A68770C2787906B0000D2B5 /* EditBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBudget.swift; sourceTree = "<group>"; };
 		4A2377AD2786B524009EEDB2 /* genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2377B02786B524009EEDB2 /* genieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genieApp.swift; sourceTree = "<group>"; };
 		4A2377B22786B524009EEDB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,9 @@
 
 				4A81FE9D278758AB0048842D /* AddProductsView.swift */,
 				4ABF147527876E45000A074B /* ImagePicker.swift */,
+        
+				3A68770C2787906B0000D2B5 /* EditBudget.swift */,
+
 				4AFC55612787B06C00E6DBDA /* WishlistItem.swift */,
 				4AFC55632787B15000E6DBDA /* ViewModel.swift */,
 				4AFC55652787B7FB00E6DBDA /* WishlistView.swift */,
@@ -204,6 +209,7 @@
 				4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */,
 				4AFC55642787B15000E6DBDA /* ViewModel.swift in Sources */,
 				4A81FE9E278758AB0048842D /* AddProductsView.swift in Sources */,
+				3A68770D2787906C0000D2B5 /* EditBudget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
