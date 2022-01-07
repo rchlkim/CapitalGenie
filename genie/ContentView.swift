@@ -15,36 +15,52 @@ struct ContentView: View {
 //        }
 //    }
     
-    struct EditBudgetView: View {
-        var body: some View{
-            Text("Edit Budget Page")
-                .navigationTitle("Budget")
-        }
-    }
-    
-    struct SortWishListView: View {
-        var body: some View{
-            Text("Wishlist Sorting Page")
-                .navigationTitle("Wishlist")
-        }
-    }
-    
+//    struct EditBudgetView: View {
+//        var body: some View{
+//            Text("Edit Budget Page")
+//                .navigationTitle("Budget")
+//        }
+//    }
 
     var body: some View {
+        
         NavigationView {
             List {
+                Section {
+                    VStack() {
+                        Image("WhiteCatLogo.png")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 190.0, height: 190.0)
+                            .listRowBackground(Color(.secondarySystemBackground))
+                            .position(x: 140, y: 100)
+                        VStack() {
+                            Text("Your Budget")
+                                    .listRowBackground(Color(.secondarySystemBackground))
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .padding(.top, 5)
+                            Text("$200.78")
+                                .listRowBackground(Color(.secondarySystemBackground))
+                                .font(Font.system(size: 40))
+                                .frame(maxWidth: .infinity, alignment: .center)
+                        }
+                        .padding(-15)
+                    }
+                    .listRowBackground(Color(.secondarySystemBackground))
+                }
                 NavigationLink(destination: AddProductsView()){
                     Text("Add Item")
                 }
                 NavigationLink(destination: CombinationResult()){
                     Text("View Combinations")
                 }
-                NavigationLink(destination: EditBudgetView()){
+                NavigationLink(destination: EditBudget()){
                     Text("Change Budget")
                 }
-                NavigationLink(destination: SortWishListView()){
-                    Text("Sort Wishlist")
+                NavigationLink(destination: SortWishlistView()){
+                    Text("View Wishlist")
                 }
+                .navigationTitle("Aladdin's Wishlist")
             }
         }
     }

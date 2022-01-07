@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class OptionOne{
+class OptionOne: Identifiable{
     
     var items: [WishlistItem]
     
@@ -15,8 +15,8 @@ class OptionOne{
         self.items = items;
     }
     
-    private func getCombination(budget: Int) -> [[WishlistItem]]{
-        let itemsInBudget = items.filter{$0.productPrice > budget}
+   public func getCombination(budget: Int) -> [[WishlistItem]]{
+        let itemsInBudget = items.filter{$0.productPrice < budget}
         //this might be a problem \/
         var allCombo: [[WishlistItem]] = [[]]
         var curCombo: [WishlistItem] = []
@@ -34,8 +34,11 @@ class OptionOne{
         
         if(sum == 0){
             allCombos.append(curCombo)
-        } else if (sum > 0){
-            for i in (pos...allItems.capacity-1){
+        } else if (sum > 0 ){
+            
+            for i in (pos..<allItems.endIndex){
+                print(i)
+                print(allItems.endIndex)
                 let price: Int = allItems[i].productPrice
                 
                 if(sum >= price){
@@ -44,7 +47,7 @@ class OptionOne{
                            allItems: allItems,
                            curCombo: &curCombo,
                            sum: (sum - price), pos: i)
-                    curCombo.remove(at: curCombo.capacity-1)
+                    curCombo.removeLast()
                 }
             }
         }
@@ -52,9 +55,9 @@ class OptionOne{
         
         func sortList(allCombo: inout [[WishlistItem]]) -> [[WishlistItem]]{
             //uses bubble sort
-        let n: Int = allCombo.capacity
-            for i in (0...n-1){
-                for j in (0...n-i-1){
+        let n: Int = allCombo.endIndex
+            for i in (0..<n-1){
+                for j in (0..<n-i-1){
                     if(sumOfRank(list: allCombo[j]) > sumOfRank(list: allCombo[j+1])){
                         var temp = allCombo[j]
                         allCombo[j] = allCombo[j+1]
@@ -67,7 +70,8 @@ class OptionOne{
         
         func sumOfRank(list: [WishlistItem]) -> Int{
             var sum: Int = 0
-            for i in 0...list.capacity{
+            print(list.capacity)
+            for i in 0..<list.endIndex{
                 sum = sum + list[i].productPreference
             }
             return sum
@@ -80,4 +84,4 @@ class OptionOne{
     
     
     
-}
+
