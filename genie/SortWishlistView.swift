@@ -19,7 +19,7 @@ struct SortWishlistView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("Sort Wishlist")
+            Text("Your Wishlist")
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, 5)
