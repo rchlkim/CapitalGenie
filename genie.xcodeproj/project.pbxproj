@@ -20,6 +20,7 @@
 		4AFC55622787B06C00E6DBDA /* WishlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC55612787B06C00E6DBDA /* WishlistItem.swift */; };
 		4AFC55642787B15000E6DBDA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC55632787B15000E6DBDA /* ViewModel.swift */; };
 		4AFC55662787B7FB00E6DBDA /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC55652787B7FB00E6DBDA /* WishlistView.swift */; };
+		4CE8E5EA2787BF7900697E25 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8E5E92787BF7900697E25 /* Options.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4AFC55612787B06C00E6DBDA /* WishlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistItem.swift; sourceTree = "<group>"; };
 		4AFC55632787B15000E6DBDA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4AFC55652787B7FB00E6DBDA /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		4CE8E5E92787BF7900697E25 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				4AFC55612787B06C00E6DBDA /* WishlistItem.swift */,
 				4AFC55632787B15000E6DBDA /* ViewModel.swift */,
 				4AFC55652787B7FB00E6DBDA /* WishlistView.swift */,
+				4CE8E5E92787BF7900697E25 /* Options.swift */,
 			);
 			path = genie;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				4ABF147627876E45000A074B /* ImagePicker.swift in Sources */,
 				4A2377B12786B524009EEDB2 /* genieApp.swift in Sources */,
 				4AFC55642787B15000E6DBDA /* ViewModel.swift in Sources */,
+				4CE8E5EA2787BF7900697E25 /* Options.swift in Sources */,
 				4A81FE9E278758AB0048842D /* AddProductsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
