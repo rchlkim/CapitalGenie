@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct EditBudget: View {
-    @State var newBudget = "$278.00";
+    @State var newBudget = "";
     
     var body: some View {
         NavigationView{
             VStack{
                 Spacer()
                 Form {
-                    Text("Current Budget: ")
+                    Text("Current Budget: $287.00")
                     TextField("New Budget Amount", text: $newBudget)
                         .keyboardType(.numberPad)
                     Button("Save", action: {/* add item to firebase */})
