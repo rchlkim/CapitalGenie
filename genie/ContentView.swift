@@ -15,12 +15,12 @@ struct ContentView: View {
 //        }
 //    }
     
-    struct EditBudgetView: View {
-        var body: some View{
-            Text("Edit Budget Page")
-                .navigationTitle("Budget")
-        }
-    }
+//    struct EditBudgetView: View {
+//        var body: some View{
+//            Text("Edit Budget Page")
+//                .navigationTitle("Budget")
+//        }
+//    }
 
     @State var isPlaying : Bool = false
     var body: some View {
@@ -55,7 +55,7 @@ struct ContentView: View {
                 NavigationLink(destination: CombinationResult()){
                     Text("View Combinations")
                 }
-                NavigationLink(destination: EditBudgetView()){
+                NavigationLink(destination: EditBudget()){
                     Text("Change Budget")
                 }
                 NavigationLink(destination: SortWishlistView()){
